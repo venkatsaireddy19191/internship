@@ -1,0 +1,123 @@
+/* Blog Details Container */
+.blog-details-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Blog Title */
+  .blog-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Content Images */
+  .content-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .content-image {
+    width: 80%;
+    height: auto; /* Adjusts height based on aspect ratio */
+    max-height: 400px; /* Prevents images from being too tall */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sidebar Menu (Now Below the Image) */
+  .side-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .side-menu button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .side-menu button:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Details Content */
+  .details-content {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  /* Sections Styling */
+  .content-section {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    background: #f1faff;
+    border-radius: 5px;
+    text-align: left;
+  
+    /* Ensure section is not hidden under sticky headers */
+    scroll-margin-top: 80px; /* Adjust this based on your navbar/header height */
+  }
+  
+  .content-section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .content-section p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Smooth Scrolling Effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .blog-details-container {
+      width: 95%;
+    }
+  
+    .content-image {
+      width: 100%;
+    }
+  
+    .side-menu {
+      flex-direction: column;
+    }
+  
+    .side-menu button {
+      width: 100%;
+    }
+  
+    /* Adjust scroll margin for smaller screens */
+    .content-section {
+      scroll-margin-top: 100px;
+    }
+  }
+  

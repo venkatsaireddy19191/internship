@@ -1,0 +1,60 @@
+
+.blogs-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .blogs-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .blog-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .blog-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+   
+  .blog-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .like-icon {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .whatsapp-icon {
+    color: #25D366;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
